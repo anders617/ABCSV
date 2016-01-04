@@ -9,7 +9,7 @@
 import XCTest
 @testable import ABCSV
 
-class ABCSVTests: XCTestCase {
+class ABCSVCellTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +21,20 @@ class ABCSVTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testCSVCell() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+        var cell:CSVCell = .Text(contents: "Text")
+        XCTAssert(cell.value as! String == "Text", "CSVCell Text Test")
+        cell = .Integer(contents: 1)
+        XCTAssert(cell.value as! Int == 1, "CSVCell Integer Test")
+        cell = .Decimal(contents: 1.1)
+        XCTAssert(cell.value as! Double == 1.1, "CSVCell Decimal Test")
+        let date = NSDate()
+        cell = .Date(contents: date)
+        XCTAssert(cell.value as! NSDate == date, "CSVCell Date Test")
+        cell = .Header(contents: "Header")
+        XCTAssert(cell.value as! String == "Header", "CSVCell Header Test")
     }
     
 }
