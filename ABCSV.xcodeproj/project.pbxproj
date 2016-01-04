@@ -14,6 +14,7 @@
 		9AC8AE3A1C3AB4D20040FE82 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8AE381C3AB4D20040FE82 /* README.md */; };
 		9AC8AE3C1C3AB4F80040FE82 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3B1C3AB4F80040FE82 /* .gitignore */; };
 		9AC8AE3E1C3AB6900040FE82 /* CSVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3D1C3AB6900040FE82 /* CSVCell.swift */; };
+		9AC8AE401C3ABAF10040FE82 /* .gitmodule in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3F1C3ABAF10040FE82 /* .gitmodule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		9AC8AE381C3AB4D20040FE82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AC8AE3B1C3AB4F80040FE82 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9AC8AE3D1C3AB6900040FE82 /* CSVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVCell.swift; sourceTree = "<group>"; };
+		9AC8AE3F1C3ABAF10040FE82 /* .gitmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				9AC8AE3B1C3AB4F80040FE82 /* .gitignore */,
+				9AC8AE3F1C3ABAF10040FE82 /* .gitmodule */,
 				9AC8AE371C3AB4D20040FE82 /* LICENSE */,
 				9AC8AE381C3AB4D20040FE82 /* README.md */,
 				9AC8AE1F1C3AB4980040FE82 /* ABCSV */,
@@ -191,6 +194,7 @@
 			files = (
 				9AC8AE3C1C3AB4F80040FE82 /* .gitignore in Resources */,
 				9AC8AE391C3AB4D20040FE82 /* LICENSE in Resources */,
+				9AC8AE401C3ABAF10040FE82 /* .gitmodule in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
