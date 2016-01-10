@@ -24,7 +24,7 @@ class ABCSVCellTests: XCTestCase {
     func testCSVCell() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        var cell:CSVCell = .Text(contents: "Text")
+        var cell:ABCSVCell = .Text(contents: "Text")
         XCTAssert(cell.value as! String == "Text", "CSVCell Text Test")
         cell = .Integer(contents: 1)
         XCTAssert(cell.value as! Int == 1, "CSVCell Integer Test")
@@ -36,5 +36,4 @@ class ABCSVCellTests: XCTestCase {
         cell = .Header(contents: "Header")
         XCTAssert(cell.value as! String == "Header", "CSVCell Header Test")
     }
-    
 }

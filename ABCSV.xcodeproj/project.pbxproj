@@ -7,17 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A2206961C41E9ED009DA5A7 /* ABMatrices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2206931C41E9DF009DA5A7 /* ABMatrices.framework */; };
+		9A2206981C41EA00009DA5A7 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2206971C41EA00009DA5A7 /* CSV.swift */; };
+		9A22069A1C41ECF1009DA5A7 /* ABCSVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2206991C41ECF1009DA5A7 /* ABCSVTests.swift */; };
 		9AC8AE211C3AB4980040FE82 /* ABCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC8AE201C3AB4980040FE82 /* ABCSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AC8AE281C3AB4980040FE82 /* ABCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC8AE1D1C3AB4980040FE82 /* ABCSV.framework */; };
 		9AC8AE2D1C3AB4980040FE82 /* ABCSVCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8AE2C1C3AB4980040FE82 /* ABCSVCellTests.swift */; };
 		9AC8AE391C3AB4D20040FE82 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8AE371C3AB4D20040FE82 /* LICENSE */; };
-		9AC8AE3A1C3AB4D20040FE82 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8AE381C3AB4D20040FE82 /* README.md */; };
 		9AC8AE3C1C3AB4F80040FE82 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3B1C3AB4F80040FE82 /* .gitignore */; };
 		9AC8AE3E1C3AB6900040FE82 /* CSVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3D1C3AB6900040FE82 /* CSVCell.swift */; };
-		9AC8AE401C3ABAF10040FE82 /* .gitmodule in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3F1C3ABAF10040FE82 /* .gitmodule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9A2206921C41E9DF009DA5A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A22068D1C41E9DF009DA5A7 /* ABMatrices.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AEBA0EA1C3774CF0059C2B8;
+			remoteInfo = ABMatrices;
+		};
+		9A2206941C41E9DF009DA5A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A22068D1C41E9DF009DA5A7 /* ABMatrices.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AEBA0F41C3774CF0059C2B8;
+			remoteInfo = ABMatricesTests;
+		};
 		9AC8AE291C3AB4980040FE82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AC8AE141C3AB4980040FE82 /* Project object */;
@@ -28,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A22068D1C41E9DF009DA5A7 /* ABMatrices.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ABMatrices.xcodeproj; path = ../ABMatrices/ABMatrices.xcodeproj; sourceTree = "<group>"; };
+		9A2206971C41EA00009DA5A7 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		9A2206991C41ECF1009DA5A7 /* ABCSVTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVTests.swift; sourceTree = "<group>"; };
 		9AC8AE1D1C3AB4980040FE82 /* ABCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ABCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC8AE201C3AB4980040FE82 /* ABCSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCSV.h; sourceTree = "<group>"; };
 		9AC8AE221C3AB4980040FE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,7 +56,6 @@
 		9AC8AE381C3AB4D20040FE82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AC8AE3B1C3AB4F80040FE82 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9AC8AE3D1C3AB6900040FE82 /* CSVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVCell.swift; sourceTree = "<group>"; };
-		9AC8AE3F1C3ABAF10040FE82 /* .gitmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2206961C41E9ED009DA5A7 /* ABMatrices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,11 +78,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A22068E1C41E9DF009DA5A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A2206931C41E9DF009DA5A7 /* ABMatrices.framework */,
+				9A2206951C41E9DF009DA5A7 /* ABMatricesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9AC8AE131C3AB4980040FE82 = {
 			isa = PBXGroup;
 			children = (
+				9A22068D1C41E9DF009DA5A7 /* ABMatrices.xcodeproj */,
 				9AC8AE3B1C3AB4F80040FE82 /* .gitignore */,
-				9AC8AE3F1C3ABAF10040FE82 /* .gitmodule */,
 				9AC8AE371C3AB4D20040FE82 /* LICENSE */,
 				9AC8AE381C3AB4D20040FE82 /* README.md */,
 				9AC8AE1F1C3AB4980040FE82 /* ABCSV */,
@@ -86,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9AC8AE3D1C3AB6900040FE82 /* CSVCell.swift */,
+				9A2206971C41EA00009DA5A7 /* CSV.swift */,
 				9AC8AE201C3AB4980040FE82 /* ABCSV.h */,
 				9AC8AE221C3AB4980040FE82 /* Info.plist */,
 			);
@@ -96,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				9AC8AE2C1C3AB4980040FE82 /* ABCSVCellTests.swift */,
+				9A2206991C41ECF1009DA5A7 /* ABCSVTests.swift */,
 				9AC8AE2E1C3AB4980040FE82 /* Info.plist */,
 			);
 			path = ABCSVTests;
@@ -179,6 +208,12 @@
 			mainGroup = 9AC8AE131C3AB4980040FE82;
 			productRefGroup = 9AC8AE1E1C3AB4980040FE82 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9A22068E1C41E9DF009DA5A7 /* Products */;
+					ProjectRef = 9A22068D1C41E9DF009DA5A7 /* ABMatrices.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9AC8AE1C1C3AB4980040FE82 /* ABCSV */,
@@ -187,6 +222,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		9A2206931C41E9DF009DA5A7 /* ABMatrices.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ABMatrices.framework;
+			remoteRef = 9A2206921C41E9DF009DA5A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9A2206951C41E9DF009DA5A7 /* ABMatricesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ABMatricesTests.xctest;
+			remoteRef = 9A2206941C41E9DF009DA5A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		9AC8AE1B1C3AB4980040FE82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -194,7 +246,6 @@
 			files = (
 				9AC8AE3C1C3AB4F80040FE82 /* .gitignore in Resources */,
 				9AC8AE391C3AB4D20040FE82 /* LICENSE in Resources */,
-				9AC8AE401C3ABAF10040FE82 /* .gitmodule in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AC8AE3E1C3AB6900040FE82 /* CSVCell.swift in Sources */,
-				9AC8AE3A1C3AB4D20040FE82 /* README.md in Sources */,
+				9A2206981C41EA00009DA5A7 /* CSV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AC8AE2D1C3AB4980040FE82 /* ABCSVCellTests.swift in Sources */,
+				9A22069A1C41ECF1009DA5A7 /* ABCSVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +451,7 @@
 				9AC8AE331C3AB4980040FE82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AC8AE341C3AB4980040FE82 /* Build configuration list for PBXNativeTarget "ABCSVTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +460,7 @@
 				9AC8AE361C3AB4980040FE82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
