@@ -26,7 +26,7 @@ class ABCSVTests: XCTestCase {
         let csv = ABCSV(fromMatrix: [
                 [1,2,3,4,5]
             ])
-        csv.insertRow(["a","b","c","d","e"], atIndex: 0)
+        csv.insertRow(["a","b","c","d","e"], atIndex: 1)
         print(csv)
         XCTAssert(csv.content == [
                 [1,2,3,4,5],
