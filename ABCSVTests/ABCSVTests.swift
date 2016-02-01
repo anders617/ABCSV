@@ -22,12 +22,37 @@ class ABCSVTests: XCTestCase {
         super.tearDown()
     }
     
+    func testSwap() {
+        var csv = ABCSV(fromMatrix: [
+                [1,2,3],
+                [4,5,6],
+                [7,8,9]
+            ])
+        csv.swapColumns(0,2)
+        XCTAssert(csv.content == [
+                [3,2,1],
+                [6,5,4],
+                [9,8,7]
+            ],
+            "Column swap failed.")
+        csv = ABCSV(fromMatrix: [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+            ])
+        csv.swapRows(0,1)
+        XCTAssert(csv.content == [
+                [2,5,6],
+                [1,2,3],
+                [7,8,9]
+            ], "Row swap failed.")
+    }
+    
     func testInsertion() {
         let csv = ABCSV(fromMatrix: [
                 [1,2,3,4,5]
             ])
         csv.insertRow(["a","b","c","d","e"], atIndex: 1)
-        print(csv)
         XCTAssert(csv.content == [
                 [1,2,3,4,5],
                 ["a","b","c","d","e"]

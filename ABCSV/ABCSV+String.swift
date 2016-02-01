@@ -15,13 +15,10 @@ extension String {
         let searchEndIndex = searchRange.endIndex
         var ranges:[Range<Index>] = []
         while searchStartIndex < searchEndIndex {
-            if let newRange = self.rangeOfString(string,
-                options: options,
-                range: searchRange,
-                locale: locale) {
-                    ranges += [newRange]
-                    searchStartIndex = newRange.endIndex
-                    searchRange.startIndex = newRange.endIndex
+            if let newRange = self.rangeOfString(string,options: options,range: searchRange,locale: locale) {
+                ranges += [newRange]
+                searchStartIndex = newRange.endIndex
+                searchRange.startIndex = newRange.endIndex
             } else {
                 searchStartIndex = searchEndIndex
             }
