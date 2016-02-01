@@ -82,6 +82,18 @@ public class ABCSV:CustomStringConvertible {
             return csvs
     }
     
+    public static func fromFile(
+        file:NSURL,
+        withValueSeparator valueSeparator:String = ABCSV.defaultValueSeparator,
+        withRowSeparator rowSeparator:String = ABCSV.defaultRowSeparator) -> [ABCSV] {
+            do {
+                let text = try String(contentsOfURL: file, encoding: NSUTF8StringEncoding)
+                return ABCSV.fromText(text, range: nil)
+            } catch {
+                return []
+            }
+    }
+    
     public var description:String {
         return content.description
     }
