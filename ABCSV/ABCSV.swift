@@ -18,6 +18,14 @@ public class ABCSV:CustomStringConvertible {
     public var valueSeparator:String
     public var rowSeparator:String
     
+    public var columnCount:Int {
+        return content.columnCount
+    }
+    
+    public var rowCount:Int {
+        return content.rowCount
+    }
+    
     public init(
         rowCount: Int = 1,
         columnCount: Int = 1,
@@ -90,8 +98,17 @@ public class ABCSV:CustomStringConvertible {
                 let text = try String(contentsOfURL: file, encoding: NSUTF8StringEncoding)
                 return ABCSV.fromText(text, range: nil)
             } catch {
+                print(error)
                 return []
             }
+    }
+    
+    public static func fromFile(
+        path:String,
+        withValueSeparator valueSeparator:String = ABCSV.defaultValueSeparator,
+        withRowSeparator rowSeparator:String = ABCSV.defaultRowSeparator) -> [ABCSV] {
+            let file = NSURL(fileURLWithPath: path)
+            return ABCSV.fromFile(file)
     }
     
     public var description:String {

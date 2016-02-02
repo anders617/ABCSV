@@ -21,6 +21,11 @@ class ABCSVCellTests: XCTestCase {
         super.tearDown()
     }
     
+    func testFile() {
+        let csv = ABCSV.fromFile(NSURL(fileURLWithPath: "/Users/Anders/Desktop/GunViolenceByState.csv"))
+        print(csv)
+    }
+    
     func testLiteralInit() {
         var cell:ABCSVCell
         cell = "test"
