@@ -17,6 +17,11 @@ class ABCSVTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
+    func testFile() {
+        let csv = ABCSV.fromFile(NSURL(fileURLWithPath: "/Users/Anders/Downloads/companylist.csv"))
+        print(csv)
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
@@ -42,7 +47,7 @@ class ABCSVTests: XCTestCase {
             ])
         csv.swapRows(0,1)
         XCTAssert(csv.content == [
-                [2,5,6],
+                [4,5,6],
                 [1,2,3],
                 [7,8,9]
             ], "Row swap failed.")
@@ -87,7 +92,7 @@ class ABCSVTests: XCTestCase {
         XCTAssert(csvs[0].content == expected1, "Failed Multiple Initialization")
         XCTAssert(csvs[1].content == expected2, "Failed Multiple Initialization")
     }
-    
+
     func testEmptyInit() {
         let test = ABCSV()
         XCTAssert(test.content == [[.Empty]], "no param init failed")

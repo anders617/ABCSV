@@ -11,12 +11,15 @@
 		9A2206961C41E9ED009DA5A7 /* ABMatrices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2206931C41E9DF009DA5A7 /* ABMatrices.framework */; };
 		9A2206981C41EA00009DA5A7 /* ABCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2206971C41EA00009DA5A7 /* ABCSV.swift */; };
 		9A22069A1C41ECF1009DA5A7 /* ABCSVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2206991C41ECF1009DA5A7 /* ABCSVTests.swift */; };
+		9AB6D2BD1C794D9F0025194C /* PatternMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6D2BC1C794D9F0025194C /* PatternMatching.swift */; };
 		9AC8AE211C3AB4980040FE82 /* ABCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC8AE201C3AB4980040FE82 /* ABCSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AC8AE281C3AB4980040FE82 /* ABCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC8AE1D1C3AB4980040FE82 /* ABCSV.framework */; };
 		9AC8AE2D1C3AB4980040FE82 /* ABCSVCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8AE2C1C3AB4980040FE82 /* ABCSVCellTests.swift */; };
 		9AC8AE391C3AB4D20040FE82 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8AE371C3AB4D20040FE82 /* LICENSE */; };
 		9AC8AE3C1C3AB4F80040FE82 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3B1C3AB4F80040FE82 /* .gitignore */; };
 		9AC8AE3E1C3AB6900040FE82 /* ABCSVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3D1C3AB6900040FE82 /* ABCSVCell.swift */; };
+		9AD1B0431C73ED7B006FEF39 /* ABCSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1B0421C73ED7B006FEF39 /* ABCSVParser.swift */; };
+		9AD1B0471C781EA6006FEF39 /* ABCSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1B0461C781EA6006FEF39 /* ABCSVParserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 		9A22068D1C41E9DF009DA5A7 /* ABMatrices.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ABMatrices.xcodeproj; path = ../ABMatrices/ABMatrices.xcodeproj; sourceTree = "<group>"; };
 		9A2206971C41EA00009DA5A7 /* ABCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSV.swift; sourceTree = "<group>"; };
 		9A2206991C41ECF1009DA5A7 /* ABCSVTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVTests.swift; sourceTree = "<group>"; };
+		9AB6D2BC1C794D9F0025194C /* PatternMatching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternMatching.swift; sourceTree = "<group>"; };
 		9AC8AE1D1C3AB4980040FE82 /* ABCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ABCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC8AE201C3AB4980040FE82 /* ABCSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCSV.h; sourceTree = "<group>"; };
 		9AC8AE221C3AB4980040FE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		9AC8AE381C3AB4D20040FE82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AC8AE3B1C3AB4F80040FE82 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9AC8AE3D1C3AB6900040FE82 /* ABCSVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVCell.swift; sourceTree = "<group>"; };
+		9AD1B0421C73ED7B006FEF39 /* ABCSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVParser.swift; sourceTree = "<group>"; };
+		9AD1B0461C781EA6006FEF39 /* ABCSVParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVParserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +122,9 @@
 			children = (
 				9AC8AE3D1C3AB6900040FE82 /* ABCSVCell.swift */,
 				9A2206971C41EA00009DA5A7 /* ABCSV.swift */,
+				9AD1B0421C73ED7B006FEF39 /* ABCSVParser.swift */,
 				9A19DFA41C59334400A287C1 /* ABCSV+String.swift */,
+				9AB6D2BC1C794D9F0025194C /* PatternMatching.swift */,
 				9AC8AE201C3AB4980040FE82 /* ABCSV.h */,
 				9AC8AE221C3AB4980040FE82 /* Info.plist */,
 			);
@@ -128,6 +136,7 @@
 			children = (
 				9AC8AE2C1C3AB4980040FE82 /* ABCSVCellTests.swift */,
 				9A2206991C41ECF1009DA5A7 /* ABCSVTests.swift */,
+				9AD1B0461C781EA6006FEF39 /* ABCSVParserTests.swift */,
 				9AC8AE2E1C3AB4980040FE82 /* Info.plist */,
 			);
 			path = ABCSVTests;
@@ -267,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A19DFA51C59334400A287C1 /* ABCSV+String.swift in Sources */,
+				9AD1B0431C73ED7B006FEF39 /* ABCSVParser.swift in Sources */,
 				9AC8AE3E1C3AB6900040FE82 /* ABCSVCell.swift in Sources */,
 				9A2206981C41EA00009DA5A7 /* ABCSV.swift in Sources */,
+				9AB6D2BD1C794D9F0025194C /* PatternMatching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD1B0471C781EA6006FEF39 /* ABCSVParserTests.swift in Sources */,
 				9AC8AE2D1C3AB4980040FE82 /* ABCSVCellTests.swift in Sources */,
 				9A22069A1C41ECF1009DA5A7 /* ABCSVTests.swift in Sources */,
 			);
