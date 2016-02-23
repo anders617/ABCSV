@@ -20,6 +20,7 @@
 		9AC8AE3E1C3AB6900040FE82 /* ABCSVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8AE3D1C3AB6900040FE82 /* ABCSVCell.swift */; };
 		9AD1B0431C73ED7B006FEF39 /* ABCSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1B0421C73ED7B006FEF39 /* ABCSVParser.swift */; };
 		9AD1B0471C781EA6006FEF39 /* ABCSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1B0461C781EA6006FEF39 /* ABCSVParserTests.swift */; };
+		9AF66CC81C7CCA2B006C2164 /* ABCSVCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF66CC71C7CCA2B006C2164 /* ABCSVCollector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		9AC8AE3D1C3AB6900040FE82 /* ABCSVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVCell.swift; sourceTree = "<group>"; };
 		9AD1B0421C73ED7B006FEF39 /* ABCSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVParser.swift; sourceTree = "<group>"; };
 		9AD1B0461C781EA6006FEF39 /* ABCSVParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVParserTests.swift; sourceTree = "<group>"; };
+		9AF66CC71C7CCA2B006C2164 /* ABCSVCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCSVCollector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				9AC8AE3D1C3AB6900040FE82 /* ABCSVCell.swift */,
 				9A2206971C41EA00009DA5A7 /* ABCSV.swift */,
 				9AD1B0421C73ED7B006FEF39 /* ABCSVParser.swift */,
+				9AF66CC71C7CCA2B006C2164 /* ABCSVCollector.swift */,
 				9A19DFA41C59334400A287C1 /* ABCSV+String.swift */,
 				9AB6D2BC1C794D9F0025194C /* PatternMatching.swift */,
 				9AC8AE201C3AB4980040FE82 /* ABCSV.h */,
@@ -278,6 +281,7 @@
 				9A19DFA51C59334400A287C1 /* ABCSV+String.swift in Sources */,
 				9AD1B0431C73ED7B006FEF39 /* ABCSVParser.swift in Sources */,
 				9AC8AE3E1C3AB6900040FE82 /* ABCSVCell.swift in Sources */,
+				9AF66CC81C7CCA2B006C2164 /* ABCSVCollector.swift in Sources */,
 				9A2206981C41EA00009DA5A7 /* ABCSV.swift in Sources */,
 				9AB6D2BD1C794D9F0025194C /* PatternMatching.swift in Sources */,
 			);

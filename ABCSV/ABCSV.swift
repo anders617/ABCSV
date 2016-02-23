@@ -9,7 +9,15 @@
 import Foundation
 import ABMatrices
 
+
 public class ABCSV:CustomStringConvertible {
+    public enum ABCSVQuotingRule {
+        case AllFields
+        case AllTextFields
+        case NecessaryTextFields
+        case None
+    }
+    
     private(set) var content:ABMatrix<ABCSVCell>
     
     private static let defaultValueSeparator = ","
@@ -17,6 +25,7 @@ public class ABCSV:CustomStringConvertible {
     
     public var valueSeparator:String
     public var rowSeparator:String
+    public var quotingRule:ABCSVQuotingRule = .NecessaryTextFields
     
     public var columnCount:Int {
         return content.columnCount
@@ -118,12 +127,29 @@ public class ABCSV:CustomStringConvertible {
         var string = ""
         for rowNum in 0..<content.rowCount {
             for columnNum in 0..<content.columnCount-1 {
-                string += "\(content[rowNum, columnNum].description)\(valueSeparator)"
+                string += "\(applyQuotingRuleToCell(content[rowNum, columnNum]))\(valueSeparator)"
             }
             string += "\(content[rowNum, content.columnCount-1])"
             string += rowSeparator
         }
         return string
+    }
+    
+    private func applyQuotingRuleToCell(cell:ABCSVCell) -> String {
+        switch quotingRule {
+        case .AllFields:
+            return "\"\(cell.description)\""
+        case .AllTextFields:
+            if cell.isText {return "\"\(cell.description)\""}
+            return cell.description
+        case .NecessaryTextFields:
+            let desc = cell.description
+            if cell.isText && (desc.containsString(valueSeparator)||desc.containsString(rowSeparator)) {
+                return "\"\(desc)\""
+            }
+            return cell.description
+        case .None: return cell.description
+        }
     }
     
     public var dataRepresentation:NSData? {
@@ -242,44 +268,3 @@ extension ABCSV: ABCSVParserDelegate {
         
     }
 }
-
-struct ABCSVParserCollector:ABCSVParserDelegate {
-    private(set) var contents:ABMatrix<ABCSVCell> = ABMatrix(rowCount: 1, columnCount: 1, withValue: nil)
-    private var currentRow:ABVector<ABCSVCell> = [nil]
-    var callback:((ABCSVParserCollector)->())?
-    
-    mutating func csvParserDidStartDocument() {
-        currentRow = [nil]
-    }
-    
-    mutating func csvParser(parser: ABCSVParser, didStartRow row: Int) {
-        
-    }
-    
-    mutating func csvParser(parser:ABCSVParser, didEndRow row:Int, columnCount:Int) {
-        if row == 0 {
-            contents = ABMatrix(rowCount: 1, columnCount: columnCount, withValue: nil)
-            contents[0] = currentRow
-        } else {
-            if currentRow.count == contents.columnCount {
-                contents.appendRow(currentRow)
-            }
-        }
-        currentRow = [nil]
-    }
-    
-    mutating func csvParser(parser: ABCSVParser, foundCell contents: String, row: Int, column: Int) {
-        if column == 0 {
-            currentRow[0] = ABCSVCell(string:contents)
-        } else {
-            currentRow.append(ABCSVCell(string: contents))
-        }
-    }
-    
-    mutating func csvParserDidEndDocument() {
-        if let end = callback {
-            end(self)
-        }
-    }
-}
-
